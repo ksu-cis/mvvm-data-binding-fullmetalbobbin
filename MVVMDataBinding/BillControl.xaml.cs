@@ -1,4 +1,11 @@
-﻿using System;
+﻿/* BillControl.xaml.cs
+ * Author: CIS400
+ * Modified by: Amanda Dreesen
+ * Description: User control for bills. Da papah. Green. Floppy currency.
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -61,18 +68,29 @@ namespace MVVMDataBinding
             set { SetValue(QuantityProperty, value); }
         }
 
-
+        /// <summary>
+        /// Initialization
+        /// </summary>
         public BillControl()
         {
             InitializeComponent();
         }
 
-
+        /// <summary>
+        ///  Click event to handle bill increment
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">Routed event args</param>
         public void OnIncreaseClicked(object sender, RoutedEventArgs e)
         {
             Quantity++;
         }
 
+        /// <summary>
+        /// Click event to handle bill decrement
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e">Routed event args</param>
         public void OnDecreaseClicked(object sender, RoutedEventArgs e)
         {
             Quantity--;

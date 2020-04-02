@@ -1,4 +1,12 @@
-﻿using System;
+﻿/* CashRegisterModelView.xaml.cs
+ * Author: CIS400
+ * Modified by: Amanda Dreesen
+ * Description: Model View for cash register
+ *              Gimme da caaasssssh.
+ * 
+ */
+
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel;
@@ -7,6 +15,9 @@ using CashRegister;
 
 namespace MVVMDataBinding
 {
+    /// <summary>
+    /// Model View for Cash Register
+    /// </summary>
     public class CashRegisterModelView : INotifyPropertyChanged
     {
 

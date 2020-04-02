@@ -1,18 +1,14 @@
-﻿/* MainWindow.xaml.cs
+﻿/* CashRegisterControl.xaml.cs
  * Author: CIS400
  * Modified by: Amanda Dreesen
- * Description: It is the main window. 
- *              The top dog. 
- *              The big lebowski. 
- *              The rug that ties the room together.
+ * Description: User control for cash register
  * 
  */
 
+
 using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -22,18 +18,19 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using CashRegister;
 
 namespace MVVMDataBinding
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for CashRegisterControl.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class CashRegisterControl : UserControl
     {
         /// <summary>
         /// Initialization
         /// </summary>
-        public MainWindow()
+        public CashRegisterControl()
         {
             InitializeComponent();
         }
